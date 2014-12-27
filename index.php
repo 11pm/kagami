@@ -7,4 +7,6 @@ $router = new Router($request_url);
 
 $router->add('/', 'BlogController@home');
 
+$router->add('/posts/:id', 'BlogController@show');
+
 $router->run();

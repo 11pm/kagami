@@ -10,6 +10,8 @@ class View{
 
 		require __DIR__ . self::$view_folder . '/layout/head.php';
 
+		require __DIR__ . self::$view_folder . '/layout/nav.php';
+
 		require __DIR__ . self::$view_folder . $file . self::$view_ext; 
 
 		require __DIR__ . self::$view_folder . '/layout/foot.php';
