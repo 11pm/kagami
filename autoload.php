@@ -7,10 +7,6 @@ function load_files($files = []){
 	}
 }
 
-$files = glob("{vendor/*.php,app/controllers/*.php}", GLOB_BRACE);
+$files = glob("{vendor/*.php,app/controllers/*.php,app/services/*,app/routes.php}", GLOB_BRACE);
 
 load_files($files);
-
-$request_url = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
-
-$router = new Router($request_url);
