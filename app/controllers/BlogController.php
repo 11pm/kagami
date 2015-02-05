@@ -3,9 +3,9 @@ class BlogController extends Controller{
 
 	static function index(){
 
-		$post = Posts::all();
+		$post = Posts::getPosts();
 
-		self::scope('post', $post);
+		self::scope('posts', $post);
 		self::scope('title', 'Welcome to my blog');
 		self::scope('subheader', 'Where I ramble about some random stuff');
 
