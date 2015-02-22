@@ -1,4 +1,9 @@
-JSON-Blog
+Kagami
 =========
 
-PHP MVC blog stored in JSON
+Damn small MVC framework
+
+*Routing
+*Controllers
+*Views
+*Variable Scope for views
